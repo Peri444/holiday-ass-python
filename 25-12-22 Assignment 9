@@ -1,0 +1,13 @@
+n= int(input("Enter a Number = "))
+F= 0
+S= 1
+Sum = 0
+for num in range(0,n):
+    print(F,end = '  ')
+    Sum = Sum + F
+    N= F+S
+    F=S
+    S=N
+print("\nThe Sum of Fibonacci Series Numbers = %d" %Sum)
+
+
