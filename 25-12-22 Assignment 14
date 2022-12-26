@@ -1,0 +1,17 @@
+class Solution:
+    def nextHappy (self, N):
+        def happy(n):
+            s=0
+            while n>0:
+                s+=(n%10)**2
+                n//=10
+            if s==1:
+                return True
+            elif s==4:
+                return False
+            else:
+                return happy(s)
+        i=N+1
+        while not happy(i):
+            i+=1
+        return i
