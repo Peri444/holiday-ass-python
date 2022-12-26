@@ -1,0 +1,8 @@
+from math import sqrt
+n=int(input('Enter only pefect square number'))
+square_root = sqrt(n)
+print(square_root)
+if(square_root>10):
+    print("Hello")
+else:
+    print("Hii")
